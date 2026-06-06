@@ -1,5 +1,3 @@
-import { Link } from 'wouter'
-
 const COLS = [
   { title: 'Knowledge', links: [
     { href: '/', label: 'Home' },
