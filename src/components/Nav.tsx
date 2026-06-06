@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Link, useLocation } from 'wouter'
 
 const NAV_LINKS = [
@@ -14,7 +13,6 @@ const NAV_LINKS = [
 ]
 
 export default function Nav() {
-  const [open, setOpen] = useState(false)
   const [location] = useLocation()
 
   return (
@@ -33,7 +31,6 @@ export default function Nav() {
           }}>Learn</span>
         </Link>
 
-        {/* Desktop nav */}
         <div style={{ display: 'flex', gap: 4, alignItems: 'center' }} className="desktop-nav">
           {NAV_LINKS.map(l => (
             <Link key={l.href} href={l.href} style={{
