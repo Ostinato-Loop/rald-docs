@@ -1,0 +1,42 @@
+:root {
+  --bg:           #050A0F;
+  --surface:      #080F17;
+  --surface-2:    #0C1520;
+  --border:       rgba(255,255,255,0.07);
+  --border-2:     rgba(255,255,255,0.12);
+  --text:         #E8EDF3;
+  --muted:        #6B7A8D;
+  --subtle:       #3A4556;
+
+  --loop:         #00FF88;
+  --loop-glow:    rgba(0,255,136,0.18);
+  --messenger:    #FF7A00;
+  --payrald:      #0066FF;
+  --raldtics:     #FFD400;
+  --dispatch:     #00BFFF;
+  --dunarald:     #A855F7;
+  --gitrald:      #FF2E2E;
+  --voice:        #FF4FAD;
+  --identity:     #00E5FF;
+  --manilla:      #F59E0B;
+  --mail:         #34D399;
+
+  --ecosystem-gradient: linear-gradient(135deg,#00FF88 0%,#0066FF 16%,#A855F7 32%,#FF2E2E 48%,#FFD400 64%,#00BFFF 80%,#FF7A00 100%);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4,h5,h6{line-height:1.2}
+
+.gradient-text{
+  background:var(--ecosystem-gradient);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  background-size:300% 300%;
+  animation:gradient-shift 10s ease infinite;
+}
+@keyframes gradient-shift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+.section{padding:80px 0}
